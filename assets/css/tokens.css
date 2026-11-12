@@ -1,0 +1,36 @@
+:root{
+  /* Four brand colours. Everything else is derived from these. */
+  --ink:#1B1815;
+  --gold:#7A5A22;
+  --sand:#F3ECE2;
+  --alert:#A3312B;
+
+  --sand-2:color-mix(in srgb,var(--ink) 6%,var(--sand));
+  --sand-3:color-mix(in srgb,var(--ink) 12%,var(--sand));
+  --muted:color-mix(in srgb,var(--ink) 70%,var(--sand));
+  --line:color-mix(in srgb,var(--ink) 16%,var(--sand));
+  --gold-on-dark:color-mix(in srgb,var(--gold) 50%,var(--sand));
+  --sand-muted:color-mix(in srgb,var(--sand) 72%,var(--ink));
+  --paper:color-mix(in srgb,var(--sand) 55%,#fff);
+
+  /* Admin order-status colours (distinct, all >= 4.5:1 on paper) */
+  --st-new:#244F7D;
+  --st-preparing:#8A5A00;
+  --st-ready:#216A41;
+  --st-done:#57514A;
+  --st-cancelled:var(--alert);
+
+  --f-head:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+  --f-body:"Jost","Helvetica Neue",Arial,sans-serif;
+  --r:2px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+:lang(ar){--f-head:"Amiri","Cormorant Garamond",serif;--f-body:"IBM Plex Sans Arabic","Jost",sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--sand);color:var(--ink);font:400 1rem/1.6 var(--f-body)}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
