@@ -20,12 +20,12 @@
   --st-done:#57514A;
   --st-cancelled:var(--alert);
 
-  --f-head:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
-  --f-body:"Jost","Helvetica Neue",Arial,sans-serif;
+  --f-head:"Gilda Display","Iowan Old Style",Georgia,serif;
+  --f-body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
   --r:2px;
   --ease:cubic-bezier(.2,.7,.2,1);
 }
-:lang(ar){--f-head:"Amiri","Cormorant Garamond",serif;--f-body:"IBM Plex Sans Arabic","Jost",sans-serif}
+:lang(ar){--f-head:"Amiri",serif;--f-body:"Tajawal","Hanken Grotesk",sans-serif}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--sand);color:var(--ink);font:400 1rem/1.6 var(--f-body)}
